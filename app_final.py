@@ -14,7 +14,7 @@ global graph
 graph = tf.get_default_graph()
 model=load_model("trend_prediction_70.h5")
 app = Flask(__name__)
-app.secret_key=os.environ.get('secret_key', str(np.random.randint(0, 1000000)))
+#app.secret_key=os.environ.get('secret_key', str(np.random.randint(0, 1000000)))
 IMG_FOLDER = os.path.join('static', 'img1')
 app.config['UPLOAD_FOLDER'] = IMG_FOLDER
 
